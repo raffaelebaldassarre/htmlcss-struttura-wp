@@ -25,7 +25,17 @@ body{
 header{
   width: 100%;
   height: 30%;
-  background: yellow;
+  background-image: url("../img/natural-default-header.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 10px solid white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo{
+  width: 30%;
+  height: 100%;
 }
 
 nav{
@@ -35,6 +45,7 @@ nav{
   text-align: center;
   padding: 10px;
   border: 1px solid rgba(0,0,0,.25);
+  border-radius: 5px;
 }
 
 .menu{
@@ -53,7 +64,7 @@ main{
   margin-top: 10px;
 }
 
-.left,.top{
+.left{
   float:left;
 }
 
@@ -63,8 +74,9 @@ main{
 
 .row-l{
   width: 20%;
-  padding: 20px;
-  background: blue;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
 }
 
 .link{
@@ -72,31 +84,56 @@ main{
 }
 
 .row-c{
-  width: 60%;
-  background: red;
+  width: 55%;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .col-c{
-  padding: 20px;
+  padding: 5px;
 }
 
 .row-r{
   width: 20%;
-  background: green;
 }
 
 .col-r{
-  padding: 20px;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
 }
 
+#top{
+  margin-bottom: 20px;
+}
+
+#middle{
+  margin-bottom: 20px;
+}
+
+div p{
+  margin-top: 20px;
+}
+
+
 .footer{
-  position: absolute;
-  bottom: 0;
   background: white;
   width: 100%;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
 }
 
 .credits{
   color: lightgrey;
+}
+
+.link-social{
+  color: lightgrey;
+  height: 50px;
+  padding: 20px;
 }
